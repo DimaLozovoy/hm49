@@ -15,3 +15,13 @@ alert("У тебе є можливість вввести дату коли Team
 let DateOfSpiritsEnd = prompt("Введіть дату:");
 alert(`Чорт, Team Spirit дізбанднуться: ${DateOfSpiritsEnd}`);
 let text;
+if (
+  confirm(
+    `Ви точно впевнені що Team Spirit дізбанднуться ${DateOfSpiritsEnd}`
+  ) == true
+) {
+  text = "Подивимось";
+} else {
+  text = `Не впевнена ти людина!!`;
+}
+alert(text);
